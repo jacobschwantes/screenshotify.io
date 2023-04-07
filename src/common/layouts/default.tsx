@@ -1,7 +1,6 @@
 import { NextPage } from "next";
 import Head from "next/head";
-import { Header } from "@components/index";
-import { Footer2 } from "@components/Footer/Footer";
+import { Header, Footer } from "@components/index";
 interface LayoutProps {
   children: React.ReactNode;
 }
@@ -13,7 +12,7 @@ const Layout: NextPage<LayoutProps> = ({ children }) => {
       </Head>
       <Header />
       {children}
-      <Footer2 />
+      <Footer />
     </div>
   );
 };

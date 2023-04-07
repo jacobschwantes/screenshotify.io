@@ -1,23 +1,17 @@
-/* This example requires Tailwind CSS v2.0+ */
-import { Fragment } from "react";
-import { Disclosure, Menu, Transition } from "@headlessui/react";
+import { Disclosure } from "@headlessui/react";
 import {
   BookOpenIcon,
   ChipIcon,
   CreditCardIcon,
-  DownloadIcon,
   MenuIcon,
-  PencilIcon,
   XIcon,
 } from "@heroicons/react/outline";
+import Link from "next/link";
 const navigation = [
   { name: "Pricing", href: "/pricing", icon: CreditCardIcon },
   { name: "Docs", href: "https://docs.screenshotify.io", icon: BookOpenIcon },
-  { name: "Blog", href: "/blog", icon: PencilIcon },
-  { name: "App", href: "https://app.screenshotify.io", icon: ChipIcon },
+  { name: "Dashboard", href: "https://app.screenshotify.io", icon: ChipIcon },
 ];
-import Link from "next/link";
-import clsx from "clsx";
 
 export default function Header() {
   return (
@@ -132,9 +126,6 @@ export default function Header() {
                 </Disclosure.Button>
               </div>
             </div>
-
-
-            
           </Disclosure.Panel>
         </>
       )}
