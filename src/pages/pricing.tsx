@@ -8,10 +8,11 @@ const tiers = [
     href: "#",
     priceMonthly: 0,
     priceYearly: 0,
-    description: "Get started for free. Limited API and editor access to try out.",
+    description: "Get started for free. Get access to limited features and quota.",
     includedFeatures: [
-      "100 request quota per month",
-      "Access to limited editor features.",
+      "100 quota per month",
+      "Access to limited features",
+      "Limited support",
     ],
   },
   {
@@ -19,11 +20,11 @@ const tiers = [
     href: "#",
     priceMonthly: 8,
     priceYearly: 50,
-    description: "All the basics for new developers and small business owners.",
+    description: "Get access to our entire set of features and extended quota.",
     includedFeatures: [
-      "1000 quota per month.",
-      "Full access to the editor.",
-      "Custom presets and templates.",
+      "1000 quota per month",
+      "Access to all features",
+      "Priority support",
     ],
   },
   {
@@ -31,18 +32,19 @@ const tiers = [
     href: "#",
     priceMonthly: 15,
     priceYearly: 80,
-    description: "Extended features for experienced developers and business owners.",
+    description: "Everything in Pro, plus increased quota, priority support, and early access to new features.",
     includedFeatures: [
       "Everything in Pro",
-      "Priority support.",
-      "First access to new features.",
-      "Server rendered mockup API access.",
+      "5000 quota per month",
+      "Highest priority support",
+      "First access to new features",
+      "Feature requests",
     ],
   },
 ];
 
 export default function Example() {
-  const [selected, setSelected] = useState("yearly billing");
+  const [selected, setSelected] = useState("monthly billing");
   return (
     <div className="bg-white dark:bg-black">
       <div className="max-w-7xl mx-auto py-36 px-4 sm:px-6 lg:px-8 space-y-12">
@@ -87,7 +89,7 @@ export default function Example() {
                   href={tier.href}
                   className="mt-8 block w-full bg-blue-600 border border-zinc-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-blue-700"
                 >
-                  Buy {tier.name}
+                  Start with {tier.name}
                 </a>
               </div>
               <div className="pt-6 pb-8 px-6">

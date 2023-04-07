@@ -29,7 +29,7 @@ const features = [
     icon: CloudUploadIcon,
   },
   {
-    name: "SSL Certificates",
+    name: "Security",
     description: "API, Cloud Storage, and the App, all secure using SSL.",
     icon: LockClosedIcon,
   },
@@ -46,9 +46,9 @@ const features = [
     icon: ShieldCheckIcon,
   },
   {
-    name: "Lightning Fast API",
+    name: "Customization",
     description:
-      "We leverage caching to provide sub-second response times to API requests.",
+      "Render full page, mobile, or tablet screenshots. Set the viewport size, theme preference, device scale factor, and more.",
     icon: LightningBoltIcon,
   },
   {
@@ -82,11 +82,12 @@ const Home: NextPage = () => {
                 </div> */}
                 <div className="mt-6 sm:max-w-xl sm:text-left text-center">
                   <h1 className="text-4xl font-bold text-gray-900 tracking-tight sm:text-5xl dark:text-zinc-50">
-                    Stunning marketing images in{" "}
+                    Capture high resolution screenshots in{" "}
                     <span className="text-blue-500">seconds</span>
                   </h1>
                   <p className="mt-6 text-xl text-gray-500 dark:text-zinc-400">
-                    Craft beautiful mockups and previews using a powerful all-in-one editor.
+                    Quicikly render responsive websites as images using virtual
+                    Google Chrome with our blazing fast API.
                   </p>
                 </div>
                 {/* <form action="#" className="mt-12 sm:max-w-lg sm:w-full sm:flex">
@@ -186,10 +187,22 @@ const Home: NextPage = () => {
               </div>
               <div className="hidden sm:block relative pl-4 -mr-40 sm:mx-auto sm:max-w-3xl sm:px-0 lg:max-w-none lg:h-full lg:pl-12">
                 <img
-                  className="w-full rounded-md shadow-xl ring-1 ring-black ring-opacity-5 lg:h-full lg:w-auto lg:max-w-none  z-10"
-                  src="editor_preview.png"
+                  className="w-full rounded-md hidden dark:block shadow-xl ring-1 ring-black ring-opacity-5 lg:h-full lg:w-auto lg:max-w-none  z-10"
+                  src="tailwind_preview_dark.png"
                   alt=""
                 />
+                <img
+                  className="w-full rounded-md shadow-xl dark:hidden ring-1 ring-black ring-opacity-5 lg:h-full lg:w-auto lg:max-w-none  z-10"
+                  src="tailwind_preview_light.png"
+                  alt=""
+                />
+                
+                <div className=" hidden dark:block absolute right-1/4 -bottom-5 bg-blue-600 rounded-lg p-3 text-white ">
+                  https://api.screenshotify.io/screenshot?url=https://tailwindcss.com&color_scheme=dark
+                </div>
+                <div className=" dark:hidden absolute right-1/4 -bottom-5 bg-blue-600 rounded-lg p-3 text-white ">
+                  https://api.screenshotify.io/screenshot?url=https://tailwindcss.com
+                </div>
                 {/* <div className="absolute z-0 bg-gradient-to-r from-blue-400 to-blue-800 h-full w-full inset-0 ml-12 blur-3xl opacity-50">
 
                 </div> */}
@@ -197,7 +210,7 @@ const Home: NextPage = () => {
               <div className="mt-12 -mb-10 sm:-mb-24 lg:-mb-80 px-5 sm:hidden relative ">
                 <img
                   className="rounded-lg shadow-xl ring-1 ring-black ring-opacity-5"
-                  src="editor_preview.png"
+                  src="tailwind_preview_light.png"
                   alt=""
                 />
               </div>
@@ -215,14 +228,19 @@ const Home: NextPage = () => {
               One place to manage it all.
             </p>
             <p className="mt-5 max-w-pblue mx-auto text-xl text-gray-500 dark:text-zinc-400">
-              View your usage stats, generate access keys, view history logs,
-              and access the editor - all from one powerful dashboard.
+              View your usage stats, history logs, generate access keys, and
+              manage billing - all from one easy to use dashboard.
             </p>
           </div>
           <div className="mt-12 -mb-10 sm:-mb-24 lg:-mb-80 ">
             <img
-              className="rounded-lg shadow-xl ring-1 ring-black ring-opacity-5"
-              src="dashboard_preview.png"
+              className="rounded-lg shadow-xl dark:block hidden ring-1 ring-black ring-opacity-5"
+              src="dashboard_preview_dark.png"
+              alt=""
+            />
+            <img
+              className="rounded-lg dark:hidden block shadow-xl ring-1 ring-black ring-opacity-5"
+              src="dashboard_preview_light.png"
               alt=""
             />
           </div>
@@ -234,16 +252,16 @@ const Home: NextPage = () => {
             Powerful tools
           </h2>
           <p className="mt-2 text-3xl font-bold text-gray-900 sm:text-4xl dark:text-zinc-50">
-            Everything you need to showcase your app
+            Everything you need to capture the web
           </p>
           <p className="mx-auto mt-5 max-w-pblue text-xl text-gray-500 dark:text-zinc-400">
-            Powerful features allow you to push your brand forward.
+            Our powerful features allow you to build faster.
           </p>
           <div className="mt-12">
             <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
               {features.map((feature) => (
                 <div key={feature.name} className="pt-6">
-                  <div className="flow-root rounded-lg bg-gray-50 dark:bg-zinc-900 dark:bg-opacity-70 px-6 pb-8">
+                  <div className="flow-root h-full rounded-lg bg-gray-50 dark:bg-zinc-900 dark:bg-opacity-70 px-6 pb-8">
                     <div className="-mt-6">
                       <div>
                         <span className="inline-flex items-center justify-center rounded-md bg-blue-600 dark:bg-blue-900 dark:bg-opacity-75 p-3 shadow-lg">
@@ -285,7 +303,7 @@ const Home: NextPage = () => {
             </div>
             <div className="ml-3 inline-flex rounded-md shadow">
               <a
-                href="#"
+                href="https://docs.screenshotify.io"
                 className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-blue-600 bg-white hover:bg-blue-50"
               >
                 Learn more

@@ -18,8 +18,8 @@ const Tabs: NextComponentType<NextPageContext, {}, TabsProps> = ({
         <button
           onClick={() => setSelected(tab)}
           className={clsx(
-            "flex w-full items-center justify-center rounded-lg py-2.5 text-center text-sm font-medium capitalize leading-5 transition-all duration-300 hover:brightness-150",
-            "ring-blue-600  ring-offset-2 ring-offset-blue-400 focus:outline-none dark:ring-offset-black focus:ring-2",
+            "flex w-full items-center justify-center rounded-lg py-2.5 text-center text-sm font-medium capitalize leading-5 transition-all duration-300  ",
+            "ring-blue-600  ring-offset-2 ring-offset-blue-500 focus:outline-none dark:ring-offset-black focus:ring-2",
             tab === selected
               ? "bg-white text-blue-700 dark:text-blue-500 shadow dark:bg-blue-900 dark:bg-opacity-30  "
               : "text-gray-700 hover:text-gray-600 dark:hover:text-zinc-200 dark:text-zinc-300"
