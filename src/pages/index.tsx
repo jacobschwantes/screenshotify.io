@@ -198,10 +198,10 @@ const Home: NextPage = () => {
                 />
                 
                 <div className=" hidden dark:block absolute right-1/4 -bottom-5 bg-blue-600 rounded-lg p-3 text-white ">
-                  https://api.screenshotify.io/screenshot?url=https://tailwindcss.com&color_scheme=dark
+                  https://api.screenshotify.io/v1/screenshot?url=https://tailwindcss.com&color_scheme=dark
                 </div>
                 <div className=" dark:hidden absolute right-1/4 -bottom-5 bg-blue-600 rounded-lg p-3 text-white ">
-                  https://api.screenshotify.io/screenshot?url=https://tailwindcss.com
+                  https://api.screenshotify.io/v1/screenshot?url=https://tailwindcss.com
                 </div>
                 {/* <div className="absolute z-0 bg-gradient-to-r from-blue-400 to-blue-800 h-full w-full inset-0 ml-12 blur-3xl opacity-50">
 
