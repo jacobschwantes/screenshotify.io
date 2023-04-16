@@ -129,15 +129,15 @@ const Home: NextPage = () => {
                 <div className="mt-8 flex lg:mt-0 lg:flex-shrink-0 justify-center sm:justify-start">
                   <div className="inline-flex rounded-md shadow">
                     <a
-                      href="mailto:contact@screenshotify.io"
+                      href="https://app.screenshotify.io"
                       className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700"
                     >
-                      Request access
+                     Get started
                     </a>
                   </div>
                   <div className="ml-3 inline-flex rounded-md shadow">
                     <a
-                      href="#"
+                      href="https://docs.screenshotify.io"
                       className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-blue-600 bg-white hover:bg-blue-50"
                     >
                       Learn more
