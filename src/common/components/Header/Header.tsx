@@ -9,8 +9,8 @@ import {
 import Link from "next/link";
 const navigation = [
   { name: "Pricing", href: "/pricing", icon: CreditCardIcon },
-  { name: "Docs", href: "https://docs.screenshotify.io", icon: BookOpenIcon },
-  { name: "Dashboard", href: "https://app.screenshotify.io", icon: ChipIcon },
+  { name: "Docs", href: "https://docs.screenshotify.app", icon: BookOpenIcon },
+  { name: "Dashboard", href: "https://dashboard.screenshotify.app", icon: ChipIcon },
 ];
 
 export default function Header() {
@@ -69,13 +69,13 @@ export default function Header() {
               </div>
               <div className="hidden sm:flex space-x-5 items-center">
                 <a
-                  href="https://app.screenshotify.io"
+                  href="https://dashboard.screenshotify.app"
                   className="flex  rounded-md border border-transparent items-center justify-center text-sm font-medium dark:text-white text-black hover:text-blue-500 transition-colors duration-300"
                 >
                   Log in
                 </a>
                 <a
-                  href="https://app.screenshotify.io"
+                  href="https://dashboard.screenshotify.app"
                   className="block  rounded-md border border-transparent px-3 py-1.5  bg-blue-600 text-sm font-medium text-white shadow hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-colors duration-300"
                 >
                   Sign up
@@ -112,14 +112,14 @@ export default function Header() {
               <div className="flex w-full space-x-3 pt-2">
                 <Disclosure.Button
                   as="a"
-                  href="https://app.screenshotify.io"
+                  href="https://dashboard.screenshotify.app"
                   className="block text-center w-full  rounded-md border border-transparent px-3 py-1.5  bg-white text-sm font-medium text-black shadow hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-colors duration-300"
                 >
                   Log in
                 </Disclosure.Button>
                 <Disclosure.Button
                   as="a"
-                  href="https://app.screenshotify.io"
+                  href="https://dashboard.screenshotify.app"
                   className="block text-center w-full  rounded-md border border-transparent px-3 py-1.5  bg-blue-600 text-sm font-medium text-white shadow hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-colors duration-300"
                 >
                   Sign up

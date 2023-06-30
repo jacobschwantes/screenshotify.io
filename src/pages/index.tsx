@@ -1,7 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
-import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
 import {
   ChartBarIcon,
@@ -129,7 +128,7 @@ const Home: NextPage = () => {
                 <div className="mt-8 flex lg:mt-0 lg:flex-shrink-0 justify-center sm:justify-start">
                   <div className="inline-flex rounded-md shadow">
                     <a
-                      href="https://app.screenshotify.io"
+                      href="https://dashboard.screenshotify.app"
                       className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700"
                     >
                      Get started
@@ -137,7 +136,7 @@ const Home: NextPage = () => {
                   </div>
                   <div className="ml-3 inline-flex rounded-md shadow">
                     <a
-                      href="https://docs.screenshotify.io"
+                      href="https://dashboard.screenshotify.app"
                       className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-blue-600 bg-white hover:bg-blue-50"
                     >
                       Learn more
@@ -198,10 +197,10 @@ const Home: NextPage = () => {
                 />
                 
                 <div className=" hidden dark:block absolute right-1/4 -bottom-5 bg-blue-600 rounded-lg p-3 text-white ">
-                  https://api.screenshotify.io/v1/screenshot?url=https://tailwindcss.com&color_scheme=dark
+                  https://api.screenshotify.app/v1/screenshot?url=https://tailwindcss.com&color_scheme=dark
                 </div>
                 <div className=" dark:hidden absolute right-1/4 -bottom-5 bg-blue-600 rounded-lg p-3 text-white ">
-                  https://api.screenshotify.io/v1/screenshot?url=https://tailwindcss.com
+                  https://api.screenshotify.app/v1/screenshot?url=https://tailwindcss.com
                 </div>
                 {/* <div className="absolute z-0 bg-gradient-to-r from-blue-400 to-blue-800 h-full w-full inset-0 ml-12 blur-3xl opacity-50">
 
@@ -295,7 +294,7 @@ const Home: NextPage = () => {
           <div className="mt-8 flex lg:mt-0 lg:flex-shrink-0 justify-center sm:justify-start">
             <div className="inline-flex rounded-md shadow">
               <a
-                href="https://app.screenshotify.io"
+                href="https://dashboard.screenshotify.app"
                 className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700"
               >
                 Get started
@@ -303,7 +302,7 @@ const Home: NextPage = () => {
             </div>
             <div className="ml-3 inline-flex rounded-md shadow">
               <a
-                href="https://docs.screenshotify.io"
+                href="https://docs.screenshotify.app"
                 className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-blue-600 bg-white hover:bg-blue-50"
               >
                 Learn more

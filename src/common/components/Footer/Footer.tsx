@@ -1,14 +1,14 @@
 const navigation = {
   support: [
-    { name: "Contact", href: "mailto:support@screenshotify.io" },
+    { name: "Contact", href: "mailto:screenshotify@gmail.com" },
 
-    { name: "Documentation", href: "https://docs.screenshotify.io" },
-    { name: "API Status", href: "https://status.screenshotify.io" },
+    { name: "Documentation", href: "https://docs.screenshotify.app" },
+    { name: "API Status", href: "https://status.screenshotify.app" },
   ],
   guides: [
     { name: "Home", href: "/"},
     { name: "Pricing", href: "/pricing" },
-    { name: "Dashboard", href: "https://app.screenshotify.io" },
+    { name: "Dashboard", href: "https://dashboard.screenshotify.app" },
   ],
   legal: [
     { name: "Privacy", href: "/privacy" },
@@ -70,7 +70,7 @@ export default function Footer() {
             <p className="text-gray-500 dark:text-zinc-300 text-base">
               Capture high resolution screenshots with ease.
             </p>
-            <div className="flex space-x-6">
+            {/* <div className="flex space-x-6">
               {navigation.social.map((item) => (
                 <a
                   key={item.name}
@@ -81,7 +81,7 @@ export default function Footer() {
                   <item.icon className="h-6 w-6" aria-hidden="true" />
                 </a>
               ))}
-            </div>
+            </div> */}
           </div>
           <div className="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2">
             <div className="md:grid md:grid-cols-2 md:gap-8">
